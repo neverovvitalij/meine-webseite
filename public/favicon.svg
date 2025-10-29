@@ -1,0 +1,43 @@
+<!-- Neverov Vitalij — Neon NV Monogram -->
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title>NV Neon Monogram</title>
+  <desc>Neon-styled NV monogram inside a rounded square</desc>
+
+  <defs>
+    <!-- Неоновый градиент -->
+    <linearGradient id="nv-gradient" x1="16" y1="16" x2="240" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#39E1FF"/>
+      <stop offset="1" stop-color="#FF4BD6"/>
+    </linearGradient>
+
+    <!-- Мягкое наружное свечение рамки -->
+    <filter id="nv-outer" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#39E1FF" flood-opacity="0.7"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#FF4BD6" flood-opacity="0.55"/>
+    </filter>
+
+    <!-- Свечение линий монограммы -->
+    <filter id="nv-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b1"/>
+      <feMerge>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Рамка -->
+  <rect x="8" y="8" width="240" height="240" rx="28"
+        fill="none" stroke="url(#nv-gradient)" stroke-width="4"
+        filter="url(#nv-outer)"/>
+
+  <!-- Монограмма NV -->
+  <g stroke="url(#nv-gradient)" stroke-width="18" stroke-linecap="round"
+     stroke-linejoin="round" filter="url(#nv-glow)">
+    <!-- N -->
+    <path d="M56 180 V76 L140 180 V76"/>
+    <!-- V -->
+    <path d="M168 76 L192 180 L216 76"/>
+  </g>
+</svg>
