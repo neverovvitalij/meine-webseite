@@ -1,0 +1,24 @@
+.main {
+  min-height: 80svh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 14px;
+  padding: 6px 24px 14px;
+}
+
+.title {
+  display: inline-block;
+  margin-inline: auto;
+  font-size: clamp(42px, 7vw, 120px);
+  line-height: 1.05;
+  color: var(--bg);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 8px var(--cyan), 0 0 24px var(--cyan), 0 0 48px var(--cyan);
+}
+
+.subtitle {
+  color: var(--text);
+  font-size: clamp(16px, 2.2vw, 28px);
+  line-height: 1.35;
+}

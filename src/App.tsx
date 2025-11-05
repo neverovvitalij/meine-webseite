@@ -1,12 +1,16 @@
-import styles from './App.module.css';
 import { BrowserRouter } from 'react-router-dom';
-import Layout from './layouts/Layout';
+import Header from './components/Header';
+import styles from './App.module.css';
+import Footer from './components/Footer';
+import About from './pages/About';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className={styles.container}>
-        <Layout />
+      <div className={styles.shell}>
+        <Header />
+        <About />
+        <Footer />
       </div>
     </BrowserRouter>
   );

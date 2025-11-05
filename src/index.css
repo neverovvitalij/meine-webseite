@@ -6,13 +6,9 @@
 :root {
   --bg: #0a0b1e;
   --cyan: #39e1ff;
-  --pink: #ff4bd6;
-  --text: #f9c6ff;
+  --pink: #fa14c4;
+  --text: #ea63f9;
   --navlink: #ffd4ff;
-
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
