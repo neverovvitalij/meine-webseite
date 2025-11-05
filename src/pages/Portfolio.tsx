@@ -1,5 +1,7 @@
+import styles from '../styles/Portfolio.module.css';
+
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return <div className={styles.container}></div>;
 };
 
 export default Portfolio;

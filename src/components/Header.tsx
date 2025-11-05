@@ -12,8 +12,8 @@ const Header = (): React.JSX.Element => {
         </NavLink>
       </div>
       <nav className={styles.nav}>
-        <NavLink to="/portfolio">Portfolio</NavLink>
         <NavLink to="about">About</NavLink>
+        <NavLink to="/portfolio">Portfolio</NavLink>
         <NavLink to="contact">Contact</NavLink>
       </nav>
     </header>

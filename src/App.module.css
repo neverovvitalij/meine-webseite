@@ -1,4 +1,4 @@
-.shell {
+.container {
   position: relative;
   min-height: 100svh;
   background: radial-gradient(
@@ -16,7 +16,7 @@
   isolation: isolate;
 }
 
-.shell::before {
+.container::before {
   content: '';
   position: absolute;
   inset: -200% -80% 0%;
@@ -42,7 +42,7 @@
   );
 }
 
-.shell::after {
+.container::after {
   content: '';
   position: absolute;
   inset: 0;

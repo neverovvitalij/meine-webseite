@@ -1,5 +1,20 @@
-const Home = () => {
-  return <div>Home</div>;
+import styles from '../styles/Home.module.css';
+
+const Home = (): React.JSX.Element => {
+  return (
+    <main className={styles.main}>
+      <h1 className={styles.title}>
+        FULL-STACK
+        <br />
+        DEVELOPER
+      </h1>
+      <p className={styles.subtitle}>
+        I build web applications
+        <br />
+        using modern technologies
+      </p>
+    </main>
+  );
 };
 
 export default Home;
